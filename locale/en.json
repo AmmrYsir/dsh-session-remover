@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session remover",
+    "description": "Deletes a session permanently instead of archiving it, and cannot be undone. Open the \"...\" menu at the end of a session row in the sidebar and choose \"Delete permanently...\", then confirm in the dialog: the session's stored messages, any subagent sessions it started, its cached title and metadata, and its sidebar, archive, and pin entries are removed. A session open in a window must be closed first (nothing is deleted then). Attachment files the session referenced are kept. The agent can run the same operation through the session_delete tool."
+  }
+}

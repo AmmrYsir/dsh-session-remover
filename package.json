@@ -1,0 +1,53 @@
+{
+  "name": "@local/session-remover",
+  "version": "1.0.2",
+  "private": true,
+  "type": "module",
+  "description": "Permanently deletes sessions from the sidebar's session menu and from the agent's tools, instead of only archiving them.",
+  "license": "MIT",
+  "author": "AmmrYsir",
+  "homepage": "https://github.com/AmmrYsir/dsh-session-remover#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmmrYsir/dsh-session-remover.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AmmrYsir/dsh-session-remover/issues"
+  },
+  "keywords": [
+    "dsh-bundle",
+    "dsh-plugin",
+    "sessions",
+    "delete"
+  ],
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-context-menu"
+      ]
+    }
+  }
+}

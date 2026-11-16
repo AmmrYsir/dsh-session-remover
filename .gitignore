@@ -1,0 +1,13 @@
+# Dependencies (this bundle has none at runtime; the test suite uses only Node built-ins)
+node_modules/
+
+# Editors and OS noise
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local logs and scratch output
+*.log
+*.tmp
